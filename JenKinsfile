@@ -1,0 +1,22 @@
+pipeline{
+   agent any
+     stages
+         {
+         stage("GIT")
+             {
+             steps
+                 {
+                 git "https://github.com/nishikanta01/jenkin1.git"
+                 }
+             }
+         stage("run")
+             {
+             steps
+                 {
+                 sh "Demo.jave"
+                 sh "main.py"
+                 }
+             }
+         }
+       }
+   
