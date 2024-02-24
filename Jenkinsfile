@@ -6,15 +6,14 @@ pipeline{
              {
              steps
                  {
-                 git "https://github.com/nishikanta01/jenkin1.git"
+                 git "https://github.com/nishikanta01/nishi1.git"
                  }
              }
          stage("run")
              {
              steps
                  {
-                 sh "javac Demo.java"
-                 sh "java Demo"
+                 sh "java Demo.java"
                  sh "python3 main.py"
                  }
              }
